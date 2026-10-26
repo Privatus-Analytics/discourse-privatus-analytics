@@ -1,0 +1,12 @@
+{
+  "name": "Privatus Analytics",
+  "component": true,
+  "authors": "Privatus Analytics",
+  "about_url": "https://github.com/Privatus-Analytics/discourse-privatus-analytics",
+  "license_url": "https://github.com/Privatus-Analytics/discourse-privatus-analytics/blob/main/LICENSE",
+  "theme_version": "1.0.0",
+  "minimum_discourse_version": "3.3.0",
+  "assets": {},
+  "color_schemes": {},
+  "modifiers": {}
+}

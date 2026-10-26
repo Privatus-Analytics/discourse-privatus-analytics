@@ -1,0 +1,32 @@
+site_id:
+  type: string
+  default: ""
+
+do_not_count:
+  type: enum
+  default: staff
+  choices:
+    - nobody
+    - admins
+    - staff
+
+modules:
+  type: string
+  default: "engage,auto,vitals,clicks,ask"
+
+exclude_paths:
+  type: list
+  list_type: simple
+  default: "/admin|/admin/*"
+
+script_domain:
+  type: string
+  default: ""
+
+debug:
+  type: bool
+  default: false
+
+extend_content_security_policy:
+  type: list
+  default: "script_src: https://privatusstats.com"

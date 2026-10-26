@@ -1,0 +1,11 @@
+en:
+  theme_metadata:
+    description: "Counts visits to your forum with Privatus Analytics. No cookies, no cookie pop-up needed, and bots are left out."
+    settings:
+      site_id: "Your Privatus Analytics site id. It starts with pa_ and you find it in Privatus Analytics under Site settings, Tracking. Leave it empty to turn tracking off."
+      do_not_count: "Who should not be counted when they are logged in. Staff means admins and moderators."
+      modules: "Extra tracker modules, split by commas. engage = time on page and scroll depth, auto = downloads, outbound links and forms, vitals = page speed, clicks = click maps, ask = on-site surveys. Leave it empty to load none."
+      exclude_paths: "Paths that are never counted. A * matches anything, so /admin/* leaves out every admin page."
+      script_domain: "Only if you serve the tracker from your own domain, like stats.example.com. Leave it empty to use privatusstats.com."
+      debug: "Show each hit in the browser console instead of sending it. Turn it on to check the setup, then turn it off."
+      extend_content_security_policy: "Lets the browser load the tracker on older Discourse versions. Add your own script domain here if you set one."
