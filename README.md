@@ -64,7 +64,7 @@ card. Every new account also gets 14 days of Pro free, with no card.
 
 3. Click **Install**, then add the component to your theme (or to every theme
    your members can pick).
-4. Open the component's settings, paste your site id into **site id** and
+4. Open the component's settings, paste your site id into **Site ID** and
    save.
 
 Reload your forum in a private window and open your Privatus Analytics
@@ -77,13 +77,13 @@ component](https://meta.discourse.org/t/how-do-i-install-a-theme-or-theme-compon
 
 | Setting | Default | What it does |
 |---|---|---|
-| **site id** | empty | Your Privatus Analytics site id, like `pa_7Q2K9XH3AB`. Leave it empty to turn tracking off. |
-| **do not count** | `staff` | Who is left out while logged in. `staff` is admins and moderators, `admins` is admins only, `nobody` counts everyone. |
-| **modules** | `engage,auto,vitals,clicks,ask` | Extra tracker features, split by commas. `engage` is time on page and scroll depth, `auto` is downloads, outside links and forms, `vitals` is page speed, `clicks` is click maps and `ask` is on-site surveys. Leave it empty to load none. See [modules](https://privatusanalytics.com/docs/tracker/modules). |
-| **exclude paths** | `/admin`, `/admin/*` | Pages that are never counted. A `*` matches anything. On a forum in a subfolder (like `/forum`), the subfolder is added for you. |
-| **script domain** | empty | Only if you serve the tracker from your own domain, like `stats.example.com`. The script then loads from there and the hits are sent there. |
-| **debug** | off | Shows each hit in the browser console instead of sending it. Turn it on to check your setup, then turn it off. |
-| **extend content security policy** | `script_src: https://privatusstats.com` | Lets older Discourse versions load the script. Add your script domain here if you set one. Newer versions do not need it. |
+| **Site ID** | empty | Your Privatus Analytics site id, like `pa_7Q2K9XH3AB`. Leave it empty to turn tracking off. |
+| **Do not count** | `staff` | Who is left out while logged in. `staff` is admins and moderators, `admins` is admins only, `nobody` counts everyone. |
+| **Modules** | `engage,auto,vitals,clicks,ask` | Extra tracker features, split by commas. `engage` is time on page and scroll depth, `auto` is downloads, outside links and forms, `vitals` is page speed, `clicks` is click maps and `ask` is on-site surveys. Leave it empty to load none. See [modules](https://privatusanalytics.com/docs/tracker/modules). |
+| **Exclude paths** | `/admin`, `/admin/*` | Pages that are never counted. A `*` matches anything. On a forum in a subfolder (like `/forum`), the subfolder is added for you. |
+| **Script domain** | empty | Only if you serve the tracker from your own domain, like `stats.example.com`. The script then loads from there and the hits are sent there. |
+| **Debug** | off | Shows each hit in the browser console instead of sending it. Turn it on to check your setup, then turn it off. |
+| **Extend content security policy** | `script_src: https://privatusstats.com` | Lets older Discourse versions load the script. Add your script domain here if you set one. Newer versions do not need it. |
 
 With a site id saved, the component adds this to the page `<head>`:
 
